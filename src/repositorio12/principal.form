@@ -119,7 +119,7 @@
             </Constraint>
           </Constraints>
         </Component>
-        <Component class="javax.swing.JTextField" name="txtresultado1">
+        <Component class="javax.swing.JTextField" name="txtresultado">
           <Properties>
             <Property name="editable" type="boolean" value="false"/>
           </Properties>

@@ -35,7 +35,7 @@ public class principal extends javax.swing.JFrame {
         cmdcalcular = new javax.swing.JButton();
         cmdborrar = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
-        txtresultado1 = new javax.swing.JTextField();
+        txtresultado = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         txtvalor2 = new javax.swing.JTextField();
 
@@ -76,8 +76,8 @@ public class principal extends javax.swing.JFrame {
         jLabel3.setText("SU MONTO A PAGAR SERA DE: ");
         jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, 170, 30));
 
-        txtresultado1.setEditable(false);
-        jPanel2.add(txtresultado1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 200, 170, 30));
+        txtresultado.setEditable(false);
+        jPanel2.add(txtresultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 200, 170, 30));
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel4.setText("INGRESE LOS DIAS : ");
@@ -108,12 +108,15 @@ public class principal extends javax.swing.JFrame {
         op = (valor1 - 1);
         
         op2 = op * (valor2 * 1500);
+        
+        txtresultado.setText(String.valueOf(op2));
+        
     }//GEN-LAST:event_cmdcalcularActionPerformed
 
     private void cmdborrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdborrarActionPerformed
         txtvalor1.setText("");
         txtvalor2.setText("");
-        txtresultado1.setText("");
+        txtresultado.setText("");
         
         txtvalor1.requestFocusInWindow();
         
@@ -163,7 +166,7 @@ public class principal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JTextField txtresultado1;
+    private javax.swing.JTextField txtresultado;
     private javax.swing.JTextField txtvalor1;
     private javax.swing.JTextField txtvalor2;
     // End of variables declaration//GEN-END:variables
