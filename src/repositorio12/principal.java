@@ -129,14 +129,14 @@ public class principal extends javax.swing.JFrame {
             valor2 = Double.parseDouble(txtvalor2.getText());
 
             if (valor1 == 0) {
-                JOptionPane.showMessageDialog(this, "Por favor ingrese uan cantidad mayor que 0", "Error", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(this, "Por favor ingrese una cantidad mayor que 0", "Error", JOptionPane.ERROR_MESSAGE);
                 txtvalor1.requestFocusInWindow();
                 txtvalor1.selectAll();
             } else if (valor2 == 0) {
                 JOptionPane.showMessageDialog(this, "Por favor ingrese un numero de dias mayor que 0", "Error", JOptionPane.ERROR_MESSAGE);
                 txtvalor2.requestFocusInWindow();
                 txtvalor2.selectAll();
-            } else {
+            }else{
 
                 op = (valor1 - 1);
 
